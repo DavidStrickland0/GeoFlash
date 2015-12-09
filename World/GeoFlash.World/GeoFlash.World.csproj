@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D47327A7-A323-4F0F-B582-D069C7EEC222}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoFlash.World</RootNamespace>
+    <AssemblyName>GeoFlash.World</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>0d82efb3</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <EmbeddedResource Include="ImagePath\AO.png" />
+    <EmbeddedResource Include="ImagePath\BF.png" />
+    <EmbeddedResource Include="ImagePath\BI.png" />
+    <EmbeddedResource Include="ImagePath\BJ.png" />
+    <EmbeddedResource Include="ImagePath\BW.png" />
+    <EmbeddedResource Include="ImagePath\CD.png" />
+    <EmbeddedResource Include="ImagePath\CF.png" />
+    <EmbeddedResource Include="ImagePath\CG.png" />
+    <EmbeddedResource Include="ImagePath\CI.png" />
+    <EmbeddedResource Include="ImagePath\CM.png" />
+    <EmbeddedResource Include="ImagePath\CV.png" />
+    <EmbeddedResource Include="ImagePath\DJ.png" />
+    <EmbeddedResource Include="ImagePath\DZ.png" />
+    <EmbeddedResource Include="ImagePath\EG.png" />
+    <EmbeddedResource Include="ImagePath\EH.png" />
+    <EmbeddedResource Include="ImagePath\ER.png" />
+    <EmbeddedResource Include="ImagePath\ET.png" />
+    <EmbeddedResource Include="ImagePath\GA.png" />
+    <EmbeddedResource Include="ImagePath\GH.png" />
+    <EmbeddedResource Include="ImagePath\GM.png" />
+    <EmbeddedResource Include="ImagePath\GN.png" />
+    <EmbeddedResource Include="ImagePath\GQ.png" />
+    <EmbeddedResource Include="ImagePath\GW.png" />
+    <EmbeddedResource Include="ImagePath\KE.png" />
+    <EmbeddedResource Include="ImagePath\KM.png" />
+    <EmbeddedResource Include="ImagePath\LR.png" />
+    <EmbeddedResource Include="ImagePath\LS.png" />
+    <EmbeddedResource Include="ImagePath\LY.png" />
+    <EmbeddedResource Include="ImagePath\MA.png" />
+    <EmbeddedResource Include="ImagePath\MG.png" />
+    <EmbeddedResource Include="ImagePath\ML.png" />
+    <EmbeddedResource Include="ImagePath\MR.png" />
+    <EmbeddedResource Include="ImagePath\MU.png" />
+    <EmbeddedResource Include="ImagePath\MW.png" />
+    <EmbeddedResource Include="ImagePath\MZ.png" />
+    <EmbeddedResource Include="ImagePath\NA.png" />
+    <EmbeddedResource Include="ImagePath\NE.png" />
+    <EmbeddedResource Include="ImagePath\NG.png" />
+    <EmbeddedResource Include="ImagePath\RW.png" />
+    <EmbeddedResource Include="ImagePath\SC.png" />
+    <EmbeddedResource Include="ImagePath\SD.png" />
+    <EmbeddedResource Include="ImagePath\SH.png" />
+    <EmbeddedResource Include="ImagePath\SL.png" />
+    <EmbeddedResource Include="ImagePath\SN.png" />
+    <EmbeddedResource Include="ImagePath\SO.png" />
+    <EmbeddedResource Include="ImagePath\SS.png" />
+    <EmbeddedResource Include="ImagePath\ST.png" />
+    <EmbeddedResource Include="ImagePath\SZ.png" />
+    <EmbeddedResource Include="ImagePath\TD.png" />
+    <EmbeddedResource Include="ImagePath\TG.png" />
+    <EmbeddedResource Include="ImagePath\TN.png" />
+    <EmbeddedResource Include="ImagePath\TZ.png" />
+    <EmbeddedResource Include="ImagePath\UG.png" />
+    <EmbeddedResource Include="ImagePath\ZA.png" />
+    <EmbeddedResource Include="ImagePath\ZM.png" />
+    <EmbeddedResource Include="ImagePath\ZW.png" />
+    <EmbeddedResource Include="Localization\AppResources.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.en-US.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>GeoFlash.World.Localization</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>GeoFlash.World.Localization</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardLibrary\FlashCardData.cs" />
+    <Compile Include="Localization\AppResources.en-US.Designer.cs">
+      <DependentUpon>AppResources.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\ResourceController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\AD.png" />
+    <EmbeddedResource Include="ImagePath\AL.png" />
+    <EmbeddedResource Include="ImagePath\AM.png" />
+    <EmbeddedResource Include="ImagePath\AT.png" />
+    <EmbeddedResource Include="ImagePath\AZ.png" />
+    <EmbeddedResource Include="ImagePath\BE.png" />
+    <EmbeddedResource Include="ImagePath\BA.png" />
+    <EmbeddedResource Include="ImagePath\BG.png" />
+    <EmbeddedResource Include="ImagePath\BY.png" />
+    <EmbeddedResource Include="ImagePath\CH.png" />
+    <EmbeddedResource Include="ImagePath\HR.png" />
+    <EmbeddedResource Include="ImagePath\CY.png" />
+    <EmbeddedResource Include="ImagePath\CZ.png" />
+    <EmbeddedResource Include="ImagePath\DE.png" />
+    <EmbeddedResource Include="ImagePath\DK.png" />
+    <EmbeddedResource Include="ImagePath\EE.png" />
+    <EmbeddedResource Include="ImagePath\ES.png" />
+    <EmbeddedResource Include="ImagePath\FI.png" />
+    <EmbeddedResource Include="ImagePath\FR.png" />
+    <EmbeddedResource Include="ImagePath\GB.png" />
+    <EmbeddedResource Include="ImagePath\GR.png" />
+    <EmbeddedResource Include="ImagePath\HU.png" />
+    <EmbeddedResource Include="ImagePath\IS.png" />
+    <EmbeddedResource Include="ImagePath\IT.png" />
+    <EmbeddedResource Include="ImagePath\KZ.png" />
+    <EmbeddedResource Include="ImagePath\LI.png" />
+    <EmbeddedResource Include="ImagePath\LT.png" />
+    <EmbeddedResource Include="ImagePath\LU.png" />
+    <EmbeddedResource Include="ImagePath\LV.png" />
+    <EmbeddedResource Include="ImagePath\MC.png" />
+    <EmbeddedResource Include="ImagePath\MD.png" />
+    <EmbeddedResource Include="ImagePath\ME.png" />
+    <EmbeddedResource Include="ImagePath\MK.png" />
+    <EmbeddedResource Include="ImagePath\MT.png" />
+    <EmbeddedResource Include="ImagePath\NL.png" />
+    <EmbeddedResource Include="ImagePath\NO.png" />
+    <EmbeddedResource Include="ImagePath\PL.png" />
+    <EmbeddedResource Include="ImagePath\PT.png" />
+    <EmbeddedResource Include="ImagePath\RO.png" />
+    <EmbeddedResource Include="ImagePath\RS.png" />
+    <EmbeddedResource Include="ImagePath\RU.png" />
+    <EmbeddedResource Include="ImagePath\SM.png" />
+    <EmbeddedResource Include="ImagePath\SE.png" />
+    <EmbeddedResource Include="ImagePath\SI.png" />
+    <EmbeddedResource Include="ImagePath\SK.png" />
+    <EmbeddedResource Include="ImagePath\TR.png" />
+    <EmbeddedResource Include="ImagePath\UA.png" />
+    <EmbeddedResource Include="ImagePath\VA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\GE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\IE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\AU.png" />
+    <EmbeddedResource Include="ImagePath\FJ.png" />
+    <EmbeddedResource Include="ImagePath\KI.png" />
+    <EmbeddedResource Include="ImagePath\MH.png" />
+    <EmbeddedResource Include="ImagePath\FM.png" />
+    <EmbeddedResource Include="ImagePath\NR.png" />
+    <EmbeddedResource Include="ImagePath\NZ.png" />
+    <EmbeddedResource Include="ImagePath\PG.png" />
+    <EmbeddedResource Include="ImagePath\PW.png" />
+    <EmbeddedResource Include="ImagePath\SB.png" />
+    <EmbeddedResource Include="ImagePath\TO.png" />
+    <EmbeddedResource Include="ImagePath\TV.png" />
+    <EmbeddedResource Include="ImagePath\VU.png" />
+    <EmbeddedResource Include="ImagePath\WS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\AG.png" />
+    <EmbeddedResource Include="ImagePath\AI.png" />
+    <EmbeddedResource Include="ImagePath\AN.png" />
+    <EmbeddedResource Include="ImagePath\AR.png" />
+    <EmbeddedResource Include="ImagePath\AW.png" />
+    <EmbeddedResource Include="ImagePath\BB.png" />
+    <EmbeddedResource Include="ImagePath\BL.png" />
+    <EmbeddedResource Include="ImagePath\BM.png" />
+    <EmbeddedResource Include="ImagePath\BR.png" />
+    <EmbeddedResource Include="ImagePath\BS.png" />
+    <EmbeddedResource Include="ImagePath\BO.png" />
+    <EmbeddedResource Include="ImagePath\BZ.png" />
+    <EmbeddedResource Include="ImagePath\CA.png" />
+    <EmbeddedResource Include="ImagePath\CL.png" />
+    <EmbeddedResource Include="ImagePath\CO.png" />
+    <EmbeddedResource Include="ImagePath\CU.png" />
+    <EmbeddedResource Include="ImagePath\DM.png" />
+    <EmbeddedResource Include="ImagePath\DO.png" />
+    <EmbeddedResource Include="ImagePath\EC.png" />
+    <EmbeddedResource Include="ImagePath\GD.png" />
+    <EmbeddedResource Include="ImagePath\GF.png" />
+    <EmbeddedResource Include="ImagePath\GL.png" />
+    <EmbeddedResource Include="ImagePath\GP.png" />
+    <EmbeddedResource Include="ImagePath\GT.png" />
+    <EmbeddedResource Include="ImagePath\GY.png" />
+    <EmbeddedResource Include="ImagePath\HN.png" />
+    <EmbeddedResource Include="ImagePath\HT.png" />
+    <EmbeddedResource Include="ImagePath\JM.png" />
+    <EmbeddedResource Include="ImagePath\KN.png" />
+    <EmbeddedResource Include="ImagePath\KY.png" />
+    <EmbeddedResource Include="ImagePath\LC.png" />
+    <EmbeddedResource Include="ImagePath\MF.png" />
+    <EmbeddedResource Include="ImagePath\MQ.png" />
+    <EmbeddedResource Include="ImagePath\MS.png" />
+    <EmbeddedResource Include="ImagePath\NI.png" />
+    <EmbeddedResource Include="ImagePath\PA.png" />
+    <EmbeddedResource Include="ImagePath\PE.png" />
+    <EmbeddedResource Include="ImagePath\PR.png" />
+    <EmbeddedResource Include="ImagePath\PY.png" />
+    <EmbeddedResource Include="ImagePath\SR.png" />
+    <EmbeddedResource Include="ImagePath\SV.png" />
+    <EmbeddedResource Include="ImagePath\TC.png" />
+    <EmbeddedResource Include="ImagePath\TT.png" />
+    <EmbeddedResource Include="ImagePath\US.png" />
+    <EmbeddedResource Include="ImagePath\UY.png" />
+    <EmbeddedResource Include="ImagePath\VC.png" />
+    <EmbeddedResource Include="ImagePath\VG.png" />
+    <EmbeddedResource Include="ImagePath\VI.png" />
+    <EmbeddedResource Include="ImagePath\VE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\CR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\CW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\MX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\SX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePath\AE.png" />
+    <EmbeddedResource Include="ImagePath\AF.png" />
+    <EmbeddedResource Include="ImagePath\BD.png" />
+    <EmbeddedResource Include="ImagePath\BH.png" />
+    <EmbeddedResource Include="ImagePath\BN.png" />
+    <EmbeddedResource Include="ImagePath\BT.png" />
+    <EmbeddedResource Include="ImagePath\CN.png" />
+    <EmbeddedResource Include="ImagePath\HK.png" />
+    <EmbeddedResource Include="ImagePath\ID.png" />
+    <EmbeddedResource Include="ImagePath\IL.png" />
+    <EmbeddedResource Include="ImagePath\IN.png" />
+    <EmbeddedResource Include="ImagePath\IQ.png" />
+    <EmbeddedResource Include="ImagePath\IR.png" />
+    <EmbeddedResource Include="ImagePath\JO.png" />
+    <EmbeddedResource Include="ImagePath\JP.png" />
+    <EmbeddedResource Include="ImagePath\KG.png" />
+    <EmbeddedResource Include="ImagePath\KH.png" />
+    <EmbeddedResource Include="ImagePath\KP.png" />
+    <EmbeddedResource Include="ImagePath\KR.png" />
+    <EmbeddedResource Include="ImagePath\KW.png" />
+    <EmbeddedResource Include="ImagePath\LA.png" />
+    <EmbeddedResource Include="ImagePath\LB.png" />
+    <EmbeddedResource Include="ImagePath\LK.png" />
+    <EmbeddedResource Include="ImagePath\MM.png" />
+    <EmbeddedResource Include="ImagePath\MN.png" />
+    <EmbeddedResource Include="ImagePath\MO.png" />
+    <EmbeddedResource Include="ImagePath\MV.png" />
+    <EmbeddedResource Include="ImagePath\MY.png" />
+    <EmbeddedResource Include="ImagePath\NP.png" />
+    <EmbeddedResource Include="ImagePath\OM.png" />
+    <EmbeddedResource Include="ImagePath\PH.png" />
+    <EmbeddedResource Include="ImagePath\PK.png" />
+    <EmbeddedResource Include="ImagePath\PS.png" />
+    <EmbeddedResource Include="ImagePath\QA.png" />
+    <EmbeddedResource Include="ImagePath\SA.png" />
+    <EmbeddedResource Include="ImagePath\SG.png" />
+    <EmbeddedResource Include="ImagePath\SY.png" />
+    <EmbeddedResource Include="ImagePath\TH.png" />
+    <EmbeddedResource Include="ImagePath\TJ.png" />
+    <EmbeddedResource Include="ImagePath\TL.png" />
+    <EmbeddedResource Include="ImagePath\TM.png" />
+    <EmbeddedResource Include="ImagePath\TW.png" />
+    <EmbeddedResource Include="ImagePath\UZ.png" />
+    <EmbeddedResource Include="ImagePath\VN.png" />
+    <EmbeddedResource Include="ImagePath\YE.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GeoFlash.PCL\GeoFlash.PCL.csproj">
+      <Project>{3d49333f-51b6-4bac-8906-c49e1ef689cc}</Project>
+      <Name>GeoFlash.PCL</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
